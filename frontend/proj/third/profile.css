@@ -1,0 +1,114 @@
+/* Styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the navbar */
+.navbar {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.company-name {
+    float: left;
+    font-size: 24px;
+    color: white; /* Text color */
+    padding: 10px 20px; /* Add some padding for spacing */
+}
+
+/* Style for the "Join Us" and "Learn More" links in the middle */
+.middle-links {
+    padding: 10px 20px;
+}
+
+/* Style for the "About Us" link on the right */
+.about-us {
+    float: right;
+    font-size: 18px;
+    color: white; /* Text color */
+    padding: 10px 20px; /* Add some padding for spacing */
+}
+
+/* Style for the links (hover effect) */
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover effect for links */
+.navbar a:hover {
+    text-decoration: underline;
+}
+/* Styles for the profile section */
+#profile {
+    text-align: center;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#profile img {
+    max-width: 200px;
+    border: 5px solid #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile button:hover {
+    background-color: #555;
+}
+
+/* Styles for the clickable headings */
+.clickable {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #333;
+}
+
+.clickable:hover {
+    text-decoration: none;
+}
+
+/* Styles for the edit username and sign-out buttons */
+#edit-username, #sign-out {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#edit-username:hover, #sign-out:hover {
+    background-color: #555;
+}

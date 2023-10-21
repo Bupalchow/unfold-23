@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        /* Add your CSS styles for the profile here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            margin-right: 20px;
+        }
+
+        #profile {
+            text-align: center;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        #profile img {
+            max-width: 200px;
+            border: 5px solid #333;
+            border-radius: 50%;
+        }
+
+        #profile button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        #profile button:hover {
+            background-color: #555;
+        }
+
+        .clickable {
+            cursor: pointer;
+            text-decoration: underline;
+            color: #333;
+        }
+
+        .clickable:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div class="navbar">
+            <div class="company-name">DEO</div>
+            <div class="middle-links">
+                <a href="accumulated_events.html">Hackathons</a> |      
+                <a href="#">Profile</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="profile">
+        <img src="images/pfp.jpg" alt="Profile Picture">
+        <button id="edit-profile-pic">Edit Profile Picture</button>
+        <h1 id="username">Joe Mama</h1>
+        <h2 id="organized-events-heading" class="clickable">Events Organized</h2>
+        <ul id="organized-events" style="display: none">
+            <li>Event 1</li>
+            <li>Event 2</li>
+            <li>Event 3</li>
+        </ul>
+        <h2 id="participated-events-heading" class="clickable">Events Participated</h2>
+        <ul id="participated-events" style="display: none">
+            <li>Event A</li>
+            <li>Event B</li>
+            <li>Event C</li>
+        </ul>
+        <button id="edit-username">Edit Username</button>
+        <button id="sign-out">Sign Out</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lunatic Bytes</title>
+    <link rel="stylesheet" href="lunatic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 10px;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        form {
+            display: none;
+            /* Initially hide the form */
+            margin: 20px;
+            text-align: center;
+        }
+
+        #registration-button {
+            display: inline-block;
+            /* Show the button */
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        #registration-button:hover {
+            background-color: #2980b9;
+        }
+
+        #registration-form {
+            display: none;
+            /* Initially hide the form */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Lunatic Bytes</h1>
+    </header>
+
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#prize-pool">Price Pool</a>
+        <a href="#team-registration">Team Registration</a>
+    </nav>
+
+    <div id=" display: flex; align-items: center; justify-content: center;">
+    <div style="width: 70%;  clear: both; padding-top: 20px; margin-left: 60px;">
+        <h2 style="display: flex; align-items: center; justify-content: center;">Overview</h2>
+        <p style="text-align: justify; display: flex; align-items: center; justify-content: center;">The Lunatic Bytes hackathon is a great opportunity to learn new skills, meet new
+            people, and build something cool. The hackathon is open to anyone who is interested in participating,
+            regardless of their skill level or experience. The hackathon will focus on a variety of topics, including
+            software development, hardware development, and design. There will be prizes for the best projects, and
+            there will be opportunities to network with other attendees. If you are interested in learning new skills,
+            meeting new people, and building something cool, then you should attend the Lunatic Bytes hackathon.</p>
+    </div>
+
+    <div style="width: 30%;   padding-top: 20px;">
+        <img src="logo.jpeg" alt="Overview Image"
+            style="max-width: 100%; max-height: 150px; border-radius: 50%; display: block; margin: 0 auto;">
+    </div>
+    </div>
+    
+
+    <div style="clear: both;"></div>
+
+    <section id="schedule" style="clear: both;">
+        <h2>Schedule</h2>
+        <p>Date: November 15, 2023</p>
+    </section>
+
+    <section id="prize-pool" style="clear: both;">
+        <h2>Price Pool</h2>
+        <p>$45,000</p>
+    </section>
+
+    <button id="registration-button" style="border-radius: 5px;">Team Registration</button>
+
+    <form id="registration-form">
+        <h2>Team Registration</h2>
+        <label for="teamName">Team Name:</label>
+        <input type="text" id="teamName" name="teamName" required>
+        <br>
+        <label for="teamSize">Team Size:</label>
+        <input type="number" id="teamSize" name="teamSize" required>
+        <br>
+        <button type="submit"
+            style="border-radius: 5px; background-color: lightblue; width: 60px; transition: background-color 0.3s;"><b>Apply</b></button>
+    </form>
+
+
+    <section id="faqs" style="text-align: center;">
+        <h2>FAQs</h2>
+        <div class="faq-item" style="text-align: left; display: inline-block; text-align: left;">
+            <p class="question" style="text-align: left; cursor: pointer;"><strong>Q: Is this a 24-hour
+                    hackathon?</strong> <span class="toggle">▼</span></p>
+            <p class="answer" style="text-align: left;"><strong>A: Yes, it is a 24-hour hackathon.</strong></p>
+        </div>
+    </section>
+
+    <style>
+        .faq-item .answer {
+            display: none;
+        }
+
+        .faq-item.open .answer {
+            display: block;
+        }
+    </style>
+
+    <script>
+        // JavaScript to toggle FAQ answers
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach((item) => {
+            const question = item.querySelector('.question');
+            const toggle = question.querySelector('.toggle');
+
+            question.addEventListener('click', () => {
+                item.classList.toggle('open');
+                if (item.classList.contains('open')) {
+                    toggle.innerText = '▲';
+                } else {
+                    toggle.innerText = '▼';
+                }
+            });
+        });
+    </script>
+    <script>
+        document.getElementById("registration-button").addEventListener("click", function () {
+            var registrationForm = document.getElementById("registration-form");
+            registrationForm.style.display = (registrationForm.style.display === "block") ? "none" : "block";
+        });
+    </script>
+</body>
+
+</html>

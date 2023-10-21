@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*nav*/
+.navbar {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.company-name {
+    float: left;
+    font-size: 24px;
+    color: white; /* Text color */
+    padding: 10px 20px; /* Add some padding for spacing */
+}
+
+/* Style for the "Join Us" and "Learn More" links in the middle */
+.middle-links {
+    padding: 10px 20px;
+}
+
+/* Style for the "About Us" link on the right */
+.about-us {
+    float: right;
+    font-size: 18px;
+    color: white; /* Text color */
+    padding: 10px 20px; /* Add some padding for spacing */
+}
+
+/* Style for the links (hover effect) */
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover effect for links */
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+
+        /* Style for the hero section */
+        .hero {
+            color: white;
+            text-align: center;
+            padding: 5vw;
+        }
+
+        /* Style for the buttons */
+        .button-container {
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2vw 17vw;
+        }
+
+        .button {
+            color: white; /* Button text color */
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+           font-size: 2vw;
+        }
+        p{
+            margin-bottom: 10vw;
+        }
